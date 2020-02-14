@@ -1,0 +1,7 @@
+ for (var index = 0; index < result.result.length; index++) {
+                    $('#table_2').append(" <tbody><tr>" + " <td><input type='text' class='input' value=" + JSON.stringify(result.result[index].firstname) + " name='fname' ></td>" +
+                        " <td><input type='text' class='input' value=" + JSON.stringify(result.result[index].lastname) + " name='lname' ></td>" +
+                        " <td><input type='text' class='input' value=" + JSON.stringify(result.result[index].patronymic) + " name='patr' ></td>" +
+                        " <td><input type='checkbox' class='allow' id='" + result.result[index]._id + "' style='margin-left:50%'>" +
+                        " </td>" + "</tr></tbody>");
+                }
